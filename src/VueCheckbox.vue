@@ -56,6 +56,7 @@ export default {
   watch: {
     realValue (value) {
       this.$emit('input', value);
+      this.$emit('click', value);
     }
   },
   methods: {

@@ -52,9 +52,9 @@ module.exports = {
 if (process.env.NODE_ENV === 'production') {
   module.exports.devtool = false
   module.exports.entry = {
-    'vue.switch': './src/index.js'
+    'vue.checkbox': './src/index.js'
   }
-  module.exports.module[0].options.extractCSS = true
+  module.exports.module.rules[0].options.extractCSS = true
   module.exports.output = {
     path: path.resolve(__dirname, './dist'),
     filename: '[name].js',

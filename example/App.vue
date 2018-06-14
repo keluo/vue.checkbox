@@ -6,7 +6,7 @@
       
     </code>
     <div>
-      <vue-checkbox :value="checkboxValue" v-model="checkboxValue" label="选我"></vue-checkbox>
+      <vue-checkbox :value="checkboxValue" v-model="checkboxValue" label="选我" @click="clickMe"></vue-checkbox>
     </div>
   </div>
   <div class="block"  style="width: 80%;">
@@ -49,6 +49,9 @@ export default {
     }
   },
   methods: {
+    clickMe:function(value){
+      alert(value);
+    }
   }
 }
 </script>
